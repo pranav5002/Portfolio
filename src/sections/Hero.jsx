@@ -94,14 +94,18 @@ export const Hero = () => {
             </div>
             {/* CTA */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me
-                <ArrowRight className="w-5 h-5 " />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me
+                  <ArrowRight className="w-5 h-5 " />
+                </Button>
+              </a>
+              {/* <a href="">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a> */}
             </div>
 
             {/* social links */}
@@ -129,14 +133,14 @@ export const Hero = () => {
 
         {/* Skiils */}
         <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
+          <p className="text-md text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
           <div className="realtive overflow-hidden ">
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, index) => (
                 <div key={index} className="flex-shrink-0 px-8 py-4 ">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-white transition-colors">
                     {skill}
                   </span>
                 </div>

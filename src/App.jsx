@@ -5,7 +5,7 @@ import{Projects} from "@/sections/Projects"
 import{Experience} from "@/sections/Experience"
 import{Contact} from "@/sections/Conatct"
 import { Footer } from "./layout/Footer";
-import { Certificate } from "./sections/Certificates";
+import { Certificates } from "./sections/Certificates";
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Hero/>
         <About/>
         <Projects/>
-        <Certificate/>
+        <Certificates/>
         {/* <Experience/> */}
         <Contact/>
       </main>

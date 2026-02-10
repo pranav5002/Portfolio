@@ -6,7 +6,7 @@ const projects = [
     title: "BookStore",
     description:
       "A robust full-stack e-commerce application designed for browsing and managing a digital book inventory. The application features a dynamic frontend built with React for seamless user interaction and a scalable Node.js/Express backend serving a RESTful API.",
-    image: "/public/projects/bookstore.png",
+    image: "/projects/bookstore.png",
     tags: [
       "React.js",
       "Node.js",
@@ -22,7 +22,7 @@ const projects = [
     title: "Foodify",
     description:
       "A modern, responsive frontend application designed to simulate a seamless food ordering experience. I engineered a dynamic user interface that allows users to browse restaurant menus, filter cuisines by category, and manage their shopping cart in real-time.",
-    image: "/public/projects/foodify.png",
+    image: "/projects/foodify.png",
     tags: ["React.js", "Redux", "Tailwind CSS"],
     link: "https://foodify-01.netlify.app/",
     github: "https://github.com/pranav5002/Foodify",
@@ -31,7 +31,7 @@ const projects = [
     title: "ShopMe",
     description:
       "A high-performance e-commerce interface built with React and Vite. Features dynamic product browsing, seamless cart management, and a fully responsive design for optimal speed and user experience.",
-    image: "/public/projects/shopme.png",
+    image: "/projects/shopme.png",
     tags: ["React.js", "Tailwind CSS"],
     link: "https://shopme-01.netlify.app/",
     github: "https://github.com/pranav5002/ShopMe",
@@ -40,7 +40,7 @@ const projects = [
     title: "WiSchool",
     description:
       "A modern, responsive frontend template designed for educational institutions and online learning platforms. WiSchool features a clean, professional user interface that showcases courses, instructor profiles, and student testimonials.",
-    image: "/public/projects/wischool.png",
+    image: "/projects/wischool.png",
     tags: ["React.js", "CSS"],
     link: "https://template-wischool-01.netlify.app/",
     github: "https://github.com/pranav5002/wiSchool/tree/main",
@@ -49,7 +49,7 @@ const projects = [
     title: "Amazon-Clone",
     description:
       "A static replica of the Amazon homepage built with HTML5 and CSS3. Features a pixel-perfect recreation of the navigation bar, hero section, and responsive product grids using modern Flexbox techniques.1",
-    image: "/public/projects/amazon.png",
+    image: "/projects/amazon.png",
     tags: ["HTML", "CSS"],
     link: "https://amazon-clone-0111.netlify.app/",
     github: "https://github.com/pranav5002/amazon-clone",
@@ -100,7 +100,7 @@ export const Projects = () => {
                  to-transparent opacity-60"
                 />
                 {/* Overlay Links */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-100 md:group-hover:opacity-100 transition-opacity duration-300 md:opacity-0">
                   <a
                     href={project.link}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
